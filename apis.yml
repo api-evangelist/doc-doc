@@ -1,7 +1,23 @@
 aid: doc-doc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/doc-doc.png
 name: Doc Doc
-description: Doc Doc is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Doc Doc (DOCDOC, Inc.) is a Latin American telemedicine platform offering online medical
+  consultations by chat and video across more than 20 specialties, including pediatrics, gynecology,
+  nutrition, psychology, cardiology, dermatology, orthopedics, and general practice. It serves individual
+  patients, healthcare professionals, and companies running employee wellbeing programs, and delivers its
+  consumer product through the app at app.doc-doc.com. As of this profile the company publishes no public
+  developer API, documentation, or SDKs; enrichment found only the marketing site and the patient app.
 url: https://raw.githubusercontent.com/api-evangelist/doc-doc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Telemedicine
+- Healthcare
+- Telehealth
+- Medical
+- Wellbeing
+- Latin America
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/doc-doc-domain-security.yml
 - type: Website
   url: https://doc-doc.com
+- type: Login
+  url: https://app.doc-doc.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
